@@ -4,9 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>vueTest</title>
+    <style>
+      *{
+        margin: 0; padding: 0;
+      }
+      li {list-style: none;}
+      a {text-decoration: none;}
+      img {vertical-align: middle;}
+
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script type="text/javascript">
+  // rem 布局
+      (function(win,doc){
+            change();
+            function change(){
+                doc.documentElement.style.fontSize = doc.documentElement.clientWidth *20/320+'px';
+            }
+            win.addEventListener('resize',change,false);
+            win.addEventListener('orientationchange',change,false);
+        })(window,document);
+    </script>
 </html>
