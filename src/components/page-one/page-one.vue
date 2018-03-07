@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div class="header">头部</div>
+    <div class="header">头部1</div>
     <div class="content">
       <router-link tag="a" class="item" to="/pageTwo">点击我进入第二个页面</router-link>
     </div>
